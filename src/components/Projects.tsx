@@ -7,24 +7,22 @@ const projects = [
   {
   id: "01",
   title: "FARMACIAPLUSWEB",
-  tag: "PHARMACY MANAGEMENT SYSTEM",
-  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/logoweb.png",
-  stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
+  tag: "Sistema de gestión para farmacia",
+  image: "https://raw.githubusercontent.com/Williams-Espinosa/Portafolio/c09fa9d022b24a81564edbb94f25f6d22ca14313/logoweb.png",  stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
   repoUrl: "https://github.com/Williams-Espinosa/FarmaciaPlusWeb"
 },
 {
   id: "02",
   title: "CONTROL DE GASTOS",
-  tag: "MOBILE FINANCE APP",
-  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/logocontrol.png",
-  stack: ["REACT NATIVE", "TYPESCRIPT", "CONTEXT API"],
-  repoUrl: "https://github.com/Williams-Espinosa/ControlDeGastosReactNative"
+  tag: "APLICACIÓN MÓVIL DE FINANZAS",
+  image: "https://raw.githubusercontent.com/Williams-Espinosa/Portafolio/c09fa9d022b24a81564edbb94f25f6d22ca14313/logocontrol.png",  stack: ["REACT NATIVE", "TYPESCRIPT", "CONTEXT API"],
+  repoUrl: "https://github.com/Williams-Espinosa/ControlDeGastos-"
 },
 {
   id: "03",
   title: "LABKEEP",
-  tag: "LAB DEVICE MANAGEMENT",
-  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/%20logolabkeep.png",
+  tag: "SISTEMA DE GESTIÓN DE LABORATORIO",
+  image: "https://raw.githubusercontent.com/Williams-Espinosa/Portafolio/c09fa9d022b24a81564edbb94f25f6d22ca14313/%20logolabkeep.png",
   stack: ["JAVA", "KOTLIN", "JAVALIN", "POSTGRESQL", "JETPACK COMPOSE"],
   repoUrl: "https://github.com/Williams-Espinosa/LabKeep"
 },
