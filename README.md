@@ -30,7 +30,7 @@ Si deseas explorar el código o ejecutarlo localmente:
 
 1. **Clona el repositorio**
    ```bash
-   git clone [https://github.com/williams-espinosa/Portafolio.git](https://github.com/williams-espinosa/Portafolio.git)
+   git clone https://github.com/williams-espinosa/Portafolio.git](https://github.com/williams-espinosa/Portafolio.git
 Instala las dependencias
 
 Terminal
@@ -50,8 +50,5 @@ Correo: w.espinosa.it@gmail.com
 
 GitHub: Williams-Espinosa
 
-## 📄 Licencia
-Este proyecto es de uso personal.
-
-💻 "Crea el presente, codifica el futuro." > Desarrollado por Williams-Espinosa © 2026 — Todos los derechos reservados.
-
+> ### *"Crea el presente, codifica el futuro."*
+> © 2026 **Williams-Espinosa**. Todos los derechos reservados.
