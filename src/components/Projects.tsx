@@ -8,7 +8,7 @@ const projects = [
   id: "01",
   title: "FARMACIAPLUSWEB",
   tag: "PHARMACY MANAGEMENT SYSTEM",
-  image: "Portafolio/logofarmacia.png",
+  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/logoweb.png",
   stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
   repoUrl: "https://github.com/Williams-Espinosa/FarmaciaPlusWeb"
 },
@@ -16,7 +16,7 @@ const projects = [
   id: "02",
   title: "CONTROL DE GASTOS",
   tag: "MOBILE FINANCE APP",
-  image: "Portafolio/logocontrol.png",
+  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/logocontrol.png",
   stack: ["REACT NATIVE", "TYPESCRIPT", "CONTEXT API"],
   repoUrl: "https://github.com/Williams-Espinosa/ControlDeGastosReactNative"
 },
@@ -24,7 +24,7 @@ const projects = [
   id: "03",
   title: "LABKEEP",
   tag: "LAB DEVICE MANAGEMENT",
-  image: "Portafolio/logolabkeep.png",
+  image: "https://github.com/Williams-Espinosa/Portafolio/blob/c09fa9d022b24a81564edbb94f25f6d22ca14313/%20logolabkeep.png",
   stack: ["JAVA", "KOTLIN", "JAVALIN", "POSTGRESQL", "JETPACK COMPOSE"],
   repoUrl: "https://github.com/Williams-Espinosa/LabKeep"
 },
