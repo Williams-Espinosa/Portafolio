@@ -5,29 +5,29 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const projects = [
   {
-    id: "01",
-    title: "NEURAL CORE",
-    tag: "AI DASHBOARD",
-    image: "https://images.unsplash.com/photo-1761740533449-b8d4385e60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHZpc3VhbGl6YXRpb258ZW58MXx8fHwxNzcwMzMxMzI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    stack: ["PYTHON", "REACT", "PYTORCH"],
-    repoUrl: "https://github.com/Williams-Espinosa"
-  },
-  {
-    id: "02",
-    title: "QUANTUM UI",
-    tag: "WEB EXPERIENCE",
-    image: "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHAlMjBpbnRlcmZhY2UlMjBkYXJrJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDMzMTMyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    stack: ["NEXTJS", "THREEJS", "GSAP"],
-    repoUrl: "https://github.com/Williams-Espinosa"
-  },
-  {
-    id: "03",
-    title: "BIO SYNC",
-    tag: "MOBILE HEALTH",
-    image: "https://images.unsplash.com/photo-1757165792338-b4e8a88ae1c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMGNvZGUlMjBzY3JlZW58ZW58MXx8fHwxNzcwMjUyMzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    stack: ["FLUTTER", "FIREBASE", "IOT"],
-    repoUrl: "https://github.com/Williams-Espinosa"
-  },
+  id: "01",
+  title: "FARMACIAPLUSWEB",
+  tag: "PHARMACY MANAGEMENT SYSTEM",
+  image: "https://images.unsplash.com/photo-1580281657521-3a3f3f5d6e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80",
+  stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
+  repoUrl: "https://github.com/Williams-Espinosa/FarmaciaPlusWeb"
+},
+{
+  id: "02",
+  title: "CONTROL DE GASTOS",
+  tag: "MOBILE FINANCE APP",
+  image: "Portafolio/logocontrol.png",
+  stack: ["REACT NATIVE", "TYPESCRIPT", "CONTEXT API"],
+  repoUrl: "https://github.com/Williams-Espinosa/ControlDeGastosReactNative"
+},
+{
+  id: "03",
+  title: "LABKEEP",
+  tag: "LAB DEVICE MANAGEMENT",
+  image: "Portafolio/logolabkeep.png",
+  stack: ["JAVA", "KOTLIN", "JAVALIN", "POSTGRESQL", "JETPACK COMPOSE"],
+  repoUrl: "https://github.com/Williams-Espinosa/LabKeep"
+},
 ];
 
 import { useLanguage } from './LanguageContext';

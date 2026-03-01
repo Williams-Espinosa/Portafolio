@@ -24,9 +24,7 @@ const techGroups = [
     techs: [
       { name: "HTML5", brand: "#E34F26" },
       { name: "CSS3", brand: "#1572B6" },
-      { name: "JavaScript", brand: "#F7DF1E" },
-      { name: "React", brand: "#61DAFB" },
-      { name: "TailwindCSS", brand: "#38B2AC" }
+      { name: "JavaScript", brand: "#F7DF1E" }
     ],
     className: "md:col-span-2 md:row-span-1",
     status: "OPTIMIZED"
@@ -37,10 +35,9 @@ const techGroups = [
     techs: [
       { name: "NodeJS", brand: "#6DA55F" },
       { name: "Express.js", brand: "#FFFFFF" },
-      { name: "NestJS", brand: "#E0234E" },
-      { name: "Go", brand: "#00ADD8" },
-      { name: "Rust", brand: "#DEA584" },
-      { name: "Java", brand: "#ED8B00" }
+      { name: "Java", brand: "#ED8B00" },
+      { name: "Python", brand: "#3776AB" },
+      { name: "Kotlin", brand: "#7F52FF" }
     ],
     className: "md:col-span-2 md:row-span-2",
     status: "SCALABLE"
@@ -49,7 +46,6 @@ const techGroups = [
     title: "03.MOBILE",
     icon: <Smartphone className="text-purple-500" />,
     techs: [
-      { name: "React Native", brand: "#61DAFB" },
       { name: "Kotlin", brand: "#7F52FF" }
     ],
     className: "md:col-span-1 md:row-span-1",
@@ -93,8 +89,6 @@ const techGroups = [
     title: "07.DEV OPS",
     icon: <Settings className="text-zinc-400" />,
     techs: [
-      { name: "Docker", brand: "#2496ED" },
-      { name: "Kubernetes", brand: "#326CE5" },
       { name: "Git", brand: "#F05033" },
       { name: "GitHub", brand: "#FFFFFF" },
       { name: "Postman", brand: "#FF6C37" },
