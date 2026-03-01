@@ -8,7 +8,7 @@ const projects = [
   id: "01",
   title: "FARMACIAPLUSWEB",
   tag: "PHARMACY MANAGEMENT SYSTEM",
-  image: "https://images.unsplash.com/photo-1580281657521-3a3f3f5d6e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80",
+  image: "Portafolio/logofarmacia.png",
   stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
   repoUrl: "https://github.com/Williams-Espinosa/FarmaciaPlusWeb"
 },
