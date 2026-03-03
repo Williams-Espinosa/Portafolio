@@ -40,8 +40,6 @@ export const Contact = () => {
               {[
                 { icon: <Mail />, label: 'EMAIL SRV', val: links.email, link: `mailto:${links.email}`, color: 'group-hover:bg-blue-600' },
                 { icon: <Linkedin />, label: 'LINKED IN', val: 'williams-espinosa', link: links.linkedin, color: 'group-hover:bg-[#0077B5]' },
-                { icon: <Github />, label: 'GIT HUB', val: 'Williams-Espinosa', link: links.github, color: 'group-hover:bg-[#24292e]' },
-                { icon: <WhatsAppIcon />, label: 'WHATS APP', val: '9601152138', link: links.whatsapp, color: 'group-hover:bg-[#25D366]' },
               ].map((item, i) => (
                 <a 
                   key={i}
