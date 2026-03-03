@@ -1,7 +1,7 @@
 {
       "name": "Crear portafolio web",
-      "homepage": "https://williams-espinosa.github.io/Portafolio",
-      "version": "0.2.0",
+      "homepage": "https://wespinosa.cloud",
+      "version": "1.2.0",
       "private": true,
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
