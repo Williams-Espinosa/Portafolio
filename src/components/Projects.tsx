@@ -6,7 +6,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const projects = [
   {
   id: "01",
-  title: "FARMACIAPLUSWEB",
+  title: "FARMACIA PLUS WEB",
   tag: "Sistema de gestión para farmacia",
   image: "https://raw.githubusercontent.com/Williams-Espinosa/Portafolio/c09fa9d022b24a81564edbb94f25f6d22ca14313/logoweb.png",  stack: ["REACT", "NODEJS", "EXPRESS", "MYSQL"],
   repoUrl: "https://github.com/Williams-Espinosa/FarmaciaPlusWeb"
