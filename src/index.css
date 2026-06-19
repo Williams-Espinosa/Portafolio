@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700;900&display=swap');
 
 @theme {
   --color-accent: #4f8eff;
@@ -17,23 +16,51 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0a0c12; }
-::-webkit-scrollbar-thumb { background: #1a1d28; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #4f8eff; }
-
-::selection { background-color: rgba(79, 142, 255, 0.3); }
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-.animate-float { animation: float 3s ease-in-out infinite; }
+::-webkit-scrollbar-track {
+  background: #0a0c12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1d28;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f8eff;
+}
+
+::selection {
+  background-color: rgba(79, 142, 255, 0.3);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .text-gradient {
