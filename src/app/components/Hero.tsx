@@ -15,7 +15,7 @@ export const Hero = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/public/img/FondoNav.jpg)',
+            backgroundImage: 'url(/Portafolio/public/img/FondoNav.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -40,7 +40,7 @@ export const Hero = () => {
               className="w-full h-full rounded-full overflow-hidden flex items-center justify-center"
               style={{ backgroundColor: '#1a1a1a' }}
             >
-              <img src="/public/img/foto.png" alt="Williams Espinosa" className="w-full h-full object-cover" />
+              <img src="/Portafolio/public/img/foto.png" alt="Williams Espinosa" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
