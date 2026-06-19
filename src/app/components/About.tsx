@@ -153,7 +153,7 @@ export const About = () => {
           className="flex justify-center"
         >
           <motion.a
-            href={lang === 'ES' ? '/public/cv/CV_Williams_Espinosa_ES.pdf' : '/public/cv/CV_Williams_Espinosa_IN.pdf'}
+            href={lang === 'ES' ? '/cv/CV_Williams_Espinosa_ES.pdf' : '/cv/CV_Williams_Espinosa_IN.pdf'}
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}

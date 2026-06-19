@@ -15,7 +15,7 @@ export const Hero = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('/img/FondoHero.jpg')`,
+            backgroundImage: `url(/img/FondoNav.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

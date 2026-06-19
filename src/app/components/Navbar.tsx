@@ -47,7 +47,7 @@ export const Navbar = () => {
                 style={{ backgroundColor: '#1a1a1a' }}
               >
 
-                <img src="/Portafolio/public/img/logo.png" alt="WE" className="w-full h-full object-cover" />
+                <img src="/img/logo.png" alt="WE" className="w-full h-full object-cover" />
               </div>
             </div>
 
