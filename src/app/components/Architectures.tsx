@@ -28,10 +28,10 @@ export const Architectures = () => {
       icon: Triangle,
     },
     {
-      title: 'Event Driven',
-      titleEN: 'Event Driven',
-      description: 'Arquitectura dirigida por eventos enfocada en el bajo acoplamiento y flujos asíncronos para sistemas altamente reactivos.',
-      descriptionEN: 'Event-driven architecture focused on low coupling and asynchronous flows for highly reactive systems.',
+      title: 'Arquitectura por capas',
+      titleEN: 'Layered Architecture',
+      description: 'Arquitectura que organiza el código en capas bien definidas, promoviendo la separación de preocupaciones y la mantenibilidad.',
+      descriptionEN: 'Architecture that organizes code into well-defined layers, promoting separation of concerns and maintainability.',
       icon: Share2,
     },
     {
