@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Github, Linkedin,Instagram } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 
 export const Navbar = () => {
@@ -26,9 +26,8 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[calc(100%-2rem)] md:w-[calc(100%-3rem)] max-w-[1400px] rounded-2xl ${
-          scrolled ? 'py-2.5 shadow-2xl' : 'py-3'
-        }`}
+        className={`fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[calc(100%-2rem)] md:w-[calc(100%-3rem)] max-w-[1400px] rounded-2xl ${scrolled ? 'py-2.5 shadow-2xl' : 'py-3'
+          }`}
         style={{
           backgroundColor: 'rgba(10, 10, 10, 0.85)',
           backdropFilter: 'blur(14px)',
@@ -47,7 +46,7 @@ export const Navbar = () => {
                 className="w-full h-full rounded-full overflow-hidden flex items-center justify-center"
                 style={{ backgroundColor: '#1a1a1a' }}
               >
-              
+
                 <img src="/public/img/logo.png" alt="WE" className="w-full h-full object-cover" />
               </div>
             </div>

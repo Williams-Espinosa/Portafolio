@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import {
   GraduationCap, Briefcase, Calendar, Award
 } from 'lucide-react';

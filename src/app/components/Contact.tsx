@@ -1,28 +1,9 @@
-import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, MessageSquare, Tag, Send, Github, Linkedin, ArrowUp, Instagram } from 'lucide-react';
+import { Mail, MessageSquare, Github, Linkedin, ArrowUp, Instagram } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 
 export const Contact = () => {
   const { lang } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [sent, setSent] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form data:', formData);
-    setSent(true);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
