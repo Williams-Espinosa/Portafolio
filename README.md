@@ -4,8 +4,6 @@
 
 ---
 
-<<<<<<< HEAD
-=======
 ## 🛠️ Stack Tecnológico
 
 He construido este portafolio utilizando herramientas modernas para garantizar un rendimiento óptimo y una experiencia de usuario fluida:
@@ -17,9 +15,6 @@ He construido este portafolio utilizando herramientas modernas para garantizar u
 | **Estilos** | CSS3, HTML5 |
 | **Herramientas** | Git, GitHub Pages, NPM |
 
----
-
->>>>>>> 38c9d3f4 (feat(page): fix all view)
 ## 📩 Contacto
 ¿Tienes alguna propuesta o te interesa mi trabajo? ¡Hablemos!
 
