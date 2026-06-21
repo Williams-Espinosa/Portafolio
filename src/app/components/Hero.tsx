@@ -15,7 +15,7 @@ export const Hero = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${import.meta.env.BASE_URL}img/FondoHero.jpg)`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}img/FondoNav.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

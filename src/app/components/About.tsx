@@ -120,7 +120,7 @@ export const About = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-black text-white mb-6">
-              Soft Skills
+              {lang === 'ES' ? 'Habilidades Blandas' : 'Soft Skills'}
             </h3>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">

@@ -123,7 +123,7 @@ export const Skills = () => {
           viewport={{ once: true }}
           className="text-5xl font-black text-white mb-4 text-center"
         >
-          Tech Stack
+          {lang === 'ES' ? 'Tecnologías' : 'Tech Stack'}
         </motion.h2>
 
         <motion.div
