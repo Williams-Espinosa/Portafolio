@@ -29,7 +29,7 @@ const projects: Project[] = [
     descriptionEN: 'Secure platform for governmental file management with advanced analytics.',
     fullDescription: 'Plataforma de gestión de archivos gubernamentales con arquitectura MVC. Responsable de la capa de seguridad de la API (Express) con implementación de JWT y separación estricta de roles. Diseñada para garantizar integridad, confidencialidad y trazabilidad de documentos sensibles.',
     fullDescriptionEN: 'Government file management platform with MVC architecture. Responsible for Express API security layer with JWT and strict role separation. Designed to ensure document integrity, confidentiality and traceability.',
-    thumbnail: { bg: '#0f766e', emoji: '🏛️', gradient: 'from-teal-700 to-emerald-900' },
+    thumbnail: { src: `${import.meta.env.BASE_URL}img/Proyectos/web/logoweb.png` },
     stack: ['Express', 'PostgreSQL', 'JWT', 'Node.js', 'Arquitectura MVC'],
     features: [
       'Arquitectura MVC con capas bien definidas',
@@ -45,35 +45,7 @@ const projects: Project[] = [
       'Complete document traceability',
       'Sensitive file encryption',
     ],
-    repoUrl: 'https://github.com/Williams-Espinosa',
-    demoUrl: '#',
-    type: 'web',
-  },
-  {
-    id: 'web-02',
-    title: 'Fiscal Tech',
-    description: 'Plataforma descentralizada de juegos, torneos y streaming en Blockchain.',
-    descriptionEN: 'Decentralized gaming, tournaments and streaming platform on Blockchain.',
-    fullDescription: 'Plataforma descentralizada construida sobre Blockchain Vara que integra juegos, sistema de torneos competitivos y funcionalidad de streaming. Premiada nacional e internacionalmente por su innovación tecnológica y propuesta de valor en el ecosistema Web3.',
-    fullDescriptionEN: 'Decentralized platform built on Vara Blockchain integrating games, competitive tournaments and streaming. Nationally and internationally awarded for tech innovation in Web3.',
-    thumbnail: { bg: '#581c87', emoji: '🎮', gradient: 'from-purple-700 to-pink-900' },
-    stack: ['Java', 'Postman', 'JWT', 'Javalin', 'Mysql'],
-    features: [
-      'Plataforma descentralizada en Blockchain Vara',
-      'Sistema de torneos competitivos',
-      'Streaming integrado en tiempo real',
-      'Smart contracts en Java',
-      'Marketplace de NFTs gaming',
-    ],
-    featuresEN: [
-      'Decentralized platform on Vara Blockchain',
-      'Competitive tournament system',
-      'Real-time integrated streaming',
-      'Java smart contracts',
-      'Gaming NFT marketplace',
-    ],
-    repoUrl: 'https://github.com/Williams-Espinosa',
-    demoUrl: '#',
+    repoUrl: 'https://github.com/Williams-Espinosa/SalubTechFront.git',
     type: 'web',
   },
   {
@@ -83,7 +55,7 @@ const projects: Project[] = [
     descriptionEN: 'Native Android app to split group expenses with clean architecture.',
     fullDescription: 'Aplicación nativa Android para gestionar y dividir gastos en grupos (viajes, roomies, eventos). Construida con Kotlin, Jetpack Compose y arquitectura MVVM + Clean Architecture. Inyección de dependencias con Dagger Hilt y persistencia con Room.',
     fullDescriptionEN: 'Native Android app to manage and split group expenses. Built with Kotlin, Jetpack Compose and MVVM + Clean Architecture. Dagger Hilt DI and Room persistence.',
-    thumbnail: { bg: '#1e3a8a', emoji: '💸', gradient: 'from-blue-700 to-indigo-900' },
+    thumbnail: { src: `${import.meta.env.BASE_URL}img/Proyectos/android/logolabkeep.png` },
     stack: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Dagger Hilt', 'Room'],
     features: [
       'Gestión de gastos por grupos',
@@ -99,7 +71,7 @@ const projects: Project[] = [
       'Offline mode with Room DB',
       'Share summaries via link',
     ],
-    repoUrl: 'https://github.com/Williams-Espinosa',
+    repoUrl: 'https://github.com/Williams-Espinosa/LabKeep.git',
     type: 'android',
   },
   {
@@ -125,7 +97,7 @@ const projects: Project[] = [
       'Full CRUD for users, products and orders',
       'Differentiated chef/waiter roles',
     ],
-    repoUrl: 'https://github.com/Williams-Espinosa',
+    repoUrl: 'https://github.com/Williams-Espinosa/SARC-1.git',
     type: 'android',
   },
 ];
@@ -327,6 +299,46 @@ export const Projects = () => {
                 </div>
               </motion.div>
             ))}
+
+            <motion.a
+              href="https://github.com/Williams-Espinosa"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: currentProjects.length * 0.08 }}
+              whileHover={{ y: -8 }}
+              className="rounded-2xl overflow-hidden cursor-pointer border border-white/5 hover:border-white/20 transition-colors group flex flex-col"
+              style={{ backgroundColor: '#252525' }}
+            >
+              <div
+                className={`${thumbAspectClass} relative flex items-center justify-center`}
+                style={{ backgroundColor: '#2a2a2a' }}
+              >
+                <Github className="text-gray-500 group-hover:text-white/70 transition-all group-hover:scale-110 duration-500 w-24 h-24" />
+              </div>
+
+              <div className={`${cardBodyPadding} flex flex-col flex-1`}>
+                <h3 className={`${titleSizeClass} font-black text-white mb-2`}>
+                  {lang === 'ES' ? 'Más Proyectos' : 'More Projects'}
+                </h3>
+
+                <p
+                  className={`text-xs text-gray-400 leading-relaxed mb-4 flex-1 ${activeTab === 'android' ? 'min-h-0' : 'text-sm mb-4 min-h-[40px]'}`}
+                >
+                  {lang === 'ES'
+                    ? 'Explora más proyectos, contribuciones y código en mi perfil de GitHub.'
+                    : 'Explore more projects, contributions and code on my GitHub profile.'}
+                </p>
+
+                <div className="flex gap-2 mt-auto">
+                  <div className="flex-1 py-2.5 rounded-lg bg-[#1a1a1a] border border-white/10 text-gray-300 text-[12px] font-bold flex items-center justify-center gap-2 group-hover:bg-[#2a2a2a] group-hover:text-white transition-colors">
+                    <Github size={16} />
+                    {lang === 'ES' ? 'Ver GitHub' : 'View GitHub'}
+                  </div>
+                </div>
+              </div>
+            </motion.a>
           </motion.div>
         </AnimatePresence>
       </div>
