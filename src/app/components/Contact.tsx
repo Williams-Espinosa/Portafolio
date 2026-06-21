@@ -47,7 +47,7 @@ export const Contact = () => {
           <div className="flex justify-center gap-3">
             <motion.a
               whileHover={{ scale: 1.1, y: -3 }}
-              href="https://wa.me/5219991289926"
+              href="https://wa.me/52179666642931"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[#252525] hover:bg-[#4f8eff] text-gray-400 hover:text-black flex items-center justify-center transition-colors"
@@ -96,7 +96,7 @@ export const Contact = () => {
             <span className="text-white text-2xl font-bold tracking-tight">WILLIAMS-ESPINOSA</span>
           </div>
           <span className="text-gray-400 text-xs mt-1 font-mono tracking-wide">
-            FullStack - Android Developer - DevOps
+            Full-Stack - Android Developer - DevOps
           </span>
         </div>
 
@@ -113,7 +113,7 @@ export const Contact = () => {
             <a href="https://github.com/Williams-Espinosa" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/w.espinosa.it" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Instagram size={20} />
             </a>
           </div>
