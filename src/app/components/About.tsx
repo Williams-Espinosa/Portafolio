@@ -15,7 +15,7 @@ interface PersonalDataItem {
 
 const personalData: PersonalDataItem[] = [
   { label: 'Email', labelEN: 'Email', value: 'w.espinosa.it@gmail.com', link: 'mailto:w.espinosa.it@gmail.com' },
-  { label: 'Teléfono', labelEN: 'Phone', value: '(+52) 999 128 9926' },
+  { label: 'Teléfono', labelEN: 'Phone', value: '(+52) 966 664 29 31' },
   { label: 'Dirección', labelEN: 'Location', value: 'Tuxtla Gutiérrez, Chiapas, MX' },
   { label: 'Idiomas', labelEN: 'Languages', value: 'Español (nativo), Inglés (A2+)' },
 ];
