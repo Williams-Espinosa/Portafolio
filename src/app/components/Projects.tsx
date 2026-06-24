@@ -90,6 +90,30 @@ const projects: Project[] = [
     repoUrl: 'https://github.com/Williams-Espinosa/SARC-1.git',
     type: 'android',
   },
+  {
+    id: 'android-03',
+    title: 'Mathstack',
+    description: 'App nativa Android para reforzar el aprendizaje de matemáticas.',
+    descriptionEN: 'Native Android app to reinforce math learning.',
+    fullDescription: 'Aplicación nativa Android para reforzar el aprendizaje de matemáticas. Construida con Kotlin, Jetpack Compose y arquitectura MVVM + Clean Architecture. Inyección de dependencias con Dagger Hilt y persistencia con Room.',
+    fullDescriptionEN: 'Native Android application to reinforce math learning. Built with Kotlin, Jetpack Compose, and an MVVM + Clean Architecture. Dependency injection with Dagger Hilt and persistence with Room.',
+    thumbnail: { src: `${import.meta.env.BASE_URL}img/Proyectos/android/logomathstack.png` },
+    stack: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Dagger Hilt'],
+    features: [
+      'Arquitectura por features con capas domain/app/infra',
+      'Inyección de dependencias con Dagger Hilt',
+      'CRUD completo, ejercicios y evaluaciones.',
+      'Roles diferenciados estudiante/profesor',
+    ],
+    featuresEN: [
+      'Feature-based architecture with domain/app/infra',
+      'Dependency injection with Dagger Hilt',
+      'Full CRUD for exercises and evaluations',
+      'Differentiated student/teacher roles',
+    ],
+    repoUrl: 'https://github.com/Williams-Espinosa/Mathstack.git',
+    type: 'android',
+  },
 ];
 
 const badgeStyles = {

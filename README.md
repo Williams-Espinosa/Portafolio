@@ -1,6 +1,6 @@
 # 🌐 Portafolio Personal
 
-🔗 **Live Demo:** [https://williams-espinosa.github.io/Portafolio/](https://williams-espinosa.github.io/Portafolio/)
+🔗 **Live Demo:** [wespinosa.cloud](https://wespinosa.cloud/)
 
 ---
 
@@ -10,19 +10,21 @@ He construido este portafolio utilizando herramientas modernas para garantizar u
 
 | Área | Tecnologías |
 | :--- | :--- |
-| **Frontend Core** | React.js |
-| **Lenguajes** |JavaScript|
+| **Frontend** | React.js |
+| **Lenguajes** |Typescript|
 | **Estilos** | CSS3, HTML5 |
 | **Herramientas** | Git, GitHub Pages, NPM |
 
 ## 📩 Contacto
-¿Tienes alguna propuesta o te interesa mi trabajo? ¡Hablemos!
+¿Tienes alguna propuesta? 
 
-LinkedIn: www.linkedin.com/in/williams-espinosa
+¡Hablemos!
+
+LinkedIn: [williams-espinosa](https://www.linkedin.com/in/williams-espinosa/)
 
 Correo: w.espinosa.it@gmail.com
 
-GitHub: Williams-Espinosa
+GitHub: [Williams-Espinosa](https://github.com/Williams-Espinosa)
 
-> ### *"Crea el presente, codifica el futuro."*
-> © 2026 **Williams-Espinosa**. Todos los derechos reservados.
+ ### *"Crea el presente, codifica el futuro."*
+ © 2026 **Williams-Espinosa**. Todos los derechos reservados.
