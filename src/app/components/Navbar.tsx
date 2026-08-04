@@ -17,7 +17,7 @@ export const Navbar = () => {
   const menuItems = [
     { name: lang === 'ES' ? 'INICIO' : 'HOME', href: '#inicio' },
     { name: lang === 'ES' ? 'QUIÉN SOY' : 'ABOUT', href: '#sobre-mi' },
-    { name: lang === 'ES' ? 'SKILLS' : 'SKILLS', href: '#tecnologias' },
+    { name: lang === 'ES' ? 'TECNOLOGÍAS' : 'SKILLS', href: '#tecnologias' },
     { name: lang === 'ES' ? 'CURRICULUM' : 'RESUME', href: '#educacion' },
     { name: lang === 'ES' ? 'PORTAFOLIO' : 'PORTFOLIO', href: '#proyectos' },
     { name: lang === 'ES' ? 'CONTACTO' : 'CONTACT', href: '#contacto' },
@@ -47,7 +47,7 @@ export const Navbar = () => {
                 style={{ backgroundColor: '#1a1a1a' }}
               >
 
-                <img src="/img/logo.png" alt="WE" className="w-full h-full object-cover" />
+                <img src="/img/foto.png" alt="WE" className="w-full h-full object-cover" />
               </div>
             </div>
 

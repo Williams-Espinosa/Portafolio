@@ -15,8 +15,8 @@ const titles: Record<Language, string> = {
 };
 
 const descriptions: Record<Language, string> = {
-  ES: 'Portafolio profesional de Williams Espinosa. Desarrollador FullStack, Android y DevOps. Estudiante en la Universidad Politécnica de Chiapas.',
-  EN: 'Professional portfolio of Williams Espinosa. FullStack, Android and DevOps developer. Student at the Polytechnic University of Chiapas.',
+  ES: 'Portafolio profesional de Williams Espinosa. Desarrollador FullStack,DevOps. Estudiante en la Universidad Politécnica de Chiapas.',
+  EN: 'Professional portfolio of Williams Espinosa. FullStack,DevOps developer. Student at the Polytechnic University of Chiapas.',
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {

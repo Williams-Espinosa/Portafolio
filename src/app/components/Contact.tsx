@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Mail, MessageSquare, Github, Linkedin, ArrowUp, Instagram } from 'lucide-react';
+import { Mail, MessageSquare, Linkedin, ArrowUp, Instagram } from 'lucide-react';
+import { SiTiktok } from '@icons-pack/react-simple-icons';
 import { useLanguage } from './LanguageContext';
 
 export const Contact = () => {
@@ -96,12 +97,12 @@ export const Contact = () => {
             <span className="text-white text-2xl font-bold tracking-tight">WILLIAMS-ESPINOSA</span>
           </div>
           <span className="text-gray-400 text-xs mt-1 font-mono tracking-wide">
-            Full-Stack - Android Developer - DevOps
+            Full-Stack - Mobile - DevOps - Cloud 
           </span>
         </div>
 
         <div className="text-gray-500 text-xs text-center">
-          © 2026 WILLIAMS-ESPINOSA. {lang === 'ES' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+          © 2026 WILLIAMS ESPINOSA. {lang === 'ES' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
         </div>
 
         <div className="flex items-center gap-4">
@@ -110,8 +111,8 @@ export const Contact = () => {
             <a href="https://www.linkedin.com/in/williams-espinosa/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="https://github.com/Williams-Espinosa" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-              <Github size={20} />
+            <a href="https://www.tiktok.com/@w.espinosa.it" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <SiTiktok size={20} />
             </a>
             <a href="https://www.instagram.com/w.espinosa.it" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Instagram size={20} />

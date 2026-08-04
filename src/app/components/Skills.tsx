@@ -3,7 +3,7 @@ import { Code2, Server, Smartphone, Database, Cloud, Wrench } from 'lucide-react
 import { useLanguage } from './LanguageContext';
 
 
-type TechLevel = 'Avanzado' | 'Intermedio' | 'Básico';
+type TechLevel = 'Avanzado' | 'Intermedio' | 'Básico' | 'Aprendiendo';
 
 interface Tech {
   name: string;
@@ -21,6 +21,8 @@ const getLevelStyles = (level?: TechLevel) => {
       return 'text-yellow-400 bg-yellow-400/10 border-yellow-400/20';
     case 'Básico':
       return 'text-orange-400 bg-orange-400/10 border-orange-400/20';
+    case 'Aprendiendo':
+      return 'text-blue-400 bg-blue-400/10 border-blue-400/20';
     default:
       return 'hidden';
   }
@@ -32,6 +34,7 @@ const getLevelText = (level: TechLevel, lang: string) => {
     case 'Avanzado': return 'Advanced';
     case 'Intermedio': return 'Intermediate';
     case 'Básico': return 'Basic';
+    case 'Aprendiendo': return 'Learning';
     default: return '';
   }
 };
@@ -45,9 +48,9 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
       { name: 'JavaScript', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
       { name: 'TypeScript', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
       { name: 'Java', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-      { name: 'Kotlin', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
+      { name: 'Kotlin', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
       { name: 'Python', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-      { name: 'Go', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
+      { name: 'Go', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
     ],
   },
   {
@@ -55,21 +58,28 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
     titleEN: 'Frameworks',
     icon: <Server className="w-5 h-5" />,
     techs: [
-      { name: 'Node.js', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-      { name: 'Express', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+      { name: 'FastAPI', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
       { name: 'React', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
       { name: 'Spring Boot', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
-      { name: 'FastAPI', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
-      { name: 'Django', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg' },
+      { name: 'Tailwind CSS', level: 'Básico', iconUrl: 'https://cdn.simpleicons.org/tailwindcss' },
+      { name: 'Express.js', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+      { name: 'Next.js', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+      { name: 'Astro', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg' },
+      { name: 'Angular', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg' },
+
     ],
   },
   {
-    title: 'Móvil (Android)',
-    titleEN: 'Mobile (Android)',
+    title: 'Móvil',
+    titleEN: 'Mobile',
     icon: <Smartphone className="w-5 h-5" />,
     techs: [
       { name: 'Jetpack Compose', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg' },
       { name: 'Android Studio', level: 'Avanzado', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
+      { name: 'Kotlin', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
+      { name: 'Material Design', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg' },
+      { name: 'Flutter', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
+      { name: 'Dart', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
     ],
   },
   {
@@ -79,8 +89,8 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
     techs: [
       { name: 'PostgreSQL', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
       { name: 'mysql', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-      { name: 'SQLite', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
       { name: 'supabase', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg' },
+      { name: 'Redis', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
     ],
   },
   {
@@ -90,10 +100,12 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
     techs: [
       { name: 'AWS', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg' },
       { name: 'Docker', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-      { name: 'Nginx', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg' },
       { name: 'Git', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
       { name: 'GitHub', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
       { name: 'Linux', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
+      { name: 'Nginx', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg' },
+      { name: 'Kubernetes', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg' },
+      { name: 'Terraform', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg' },
     ],
   },
   {
@@ -101,12 +113,12 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
     titleEN: 'Tools',
     icon: <Wrench className="w-5 h-5" />,
     techs: [
-      { name: 'VS Code', level: 'Avanzado', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
       { name: 'Postman', level: 'Avanzado', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg' },
-      { name: 'Figma', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
       { name: 'Swagger', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg' },
-      { name: 'Jira', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
-      { name: 'Latex', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg' },
+      { name: 'Latex', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg' },
+      { name: 'OpenAPI', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openapi/openapi-original.svg' },
+      { name: 'Figma', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+      { name: 'Jira', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
     ],
   },
 ];

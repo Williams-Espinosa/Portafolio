@@ -18,6 +18,8 @@ const personalData: PersonalDataItem[] = [
   { label: 'Teléfono', labelEN: 'Phone', value: '(+52) 966 664 29 31' },
   { label: 'Dirección', labelEN: 'Location', value: 'Tuxtla Gutiérrez, Chiapas, MX' },
   { label: 'Idiomas', labelEN: 'Languages', value: 'Español (nativo), Inglés (A2+)' },
+  { label: 'LinkedIn', labelEN: 'LinkedIn', value: 'williams-espinosa', link: 'https://www.linkedin.com/in/williams-espinosa/' },
+  { label: 'GitHub', labelEN: 'GitHub', value: 'Williams-Espinosa', link: 'https://github.com/Williams-Espinosa' },
 ];
 
 const softSkills = [
@@ -67,8 +69,8 @@ export const About = () => {
                 : 'Hi! My name is Williams Espinosa.'}
             </span>{' '}
             {lang === 'ES'
-              ? 'Estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital en la Universidad Politécnica de Chiapas. Apasionado por el desarrollo Full Stack y aplicaciones móviles Android, iniciando mi camino a DevOps e iniciándome en el mundo de la ciberseguridad. Me motiva crear soluciones tecnológicas innovadoras, robustas y seguras, aplicando pensamiento analítico y aprendizaje continuo.'
-              : 'IT and Digital Innovation Engineering student at Polytechnic University of Chiapas. Passionate about Full Stack development and Android mobile apps, starting my path in DevOps and starting my journey in cybersecurity. Driven by creating innovative, robust and secure tech solutions through analytical thinking and continuous learning.'}
+              ? 'Estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital en la Universidad Politécnica de Chiapas. Apasionado por el desarrollo Full Stack, iniciando mi camino a DevOps y Cloud. Me motiva crear soluciones tecnológicas innovadoras, robustas y seguras, aplicando pensamiento analítico y aprendizaje continuo.'
+              : 'IT and Digital Innovation Engineering student at Polytechnic University of Chiapas. Passionate about Full Stack development, starting my path in DevOps and Cloud. Driven by creating innovative, robust and secure tech solutions through analytical thinking and continuous learning.'}
           </p>
         </motion.div>
 

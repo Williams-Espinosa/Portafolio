@@ -52,15 +52,15 @@ export const Hero = () => {
         <p className="text-center text-gray-300 text-sm mb-8 leading-relaxed px-2">
           {lang === 'ES' ? (
             <>
-              Ingeniero en TI - Full Stack,
+              Software Engineer
               <br />
-              Android & DevOps
+              Full Stack - Mobile - DevOps - Cloud
             </>
           ) : (
             <>
-              IT Engineer - Full Stack,
+              Software Engineer
               <br />
-              Android & DevOps
+              Full-Stack - Mobile - DevOps - Cloud
             </>
           )}
         </p>
