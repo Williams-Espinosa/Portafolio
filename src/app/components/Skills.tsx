@@ -64,9 +64,6 @@ const techCategories: { title: string; titleEN: string; icon: React.ReactNode; t
       { name: 'Tailwind CSS', level: 'Básico', iconUrl: 'https://cdn.simpleicons.org/tailwindcss' },
       { name: 'Express.js', level: 'Intermedio', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
       { name: 'Next.js', level: 'Básico', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-      { name: 'Astro', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg' },
-      { name: 'Angular', level: 'Aprendiendo', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg' },
-
     ],
   },
   {
