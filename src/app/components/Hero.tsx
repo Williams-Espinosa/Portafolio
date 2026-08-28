@@ -54,13 +54,13 @@ export const Hero = () => {
             <>
               Software Engineer
               <br />
-              Full Stack - Mobile - DevOps - Cloud
+              Backend - DevOps - Cloud
             </>
           ) : (
             <>
               Software Engineer
               <br />
-              Full-Stack - Mobile - DevOps - Cloud
+              Backend - DevOps - Cloud
             </>
           )}
         </p>

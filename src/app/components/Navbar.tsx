@@ -129,7 +129,7 @@ export const Navbar = () => {
               <div className="pb-3 border-b border-white/5 mb-2">
                 <p className="text-white font-black tracking-[0.1em] text-sm">WILLIAMS ESPINOSA</p>
                 <p className="text-gray-500 text-xs mt-1">
-                  {lang === 'ES' ? 'Ingeniero en TI · FullStack' : 'IT Engineer · FullStack'}
+                  {lang === 'ES' ? 'Ingeniero en TI · Backend' : 'IT Engineer · Backend'}
                 </p>
               </div>
 
